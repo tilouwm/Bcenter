@@ -3,6 +3,7 @@
 body {
     font-family: 'Inter', sans-serif;
     background-color: #1A1A2E; /* Dark purplish-grey background from screenshot */
+    overflow-x: hidden; /* Added to prevent horizontal scrolling */
 }
 
 /* Custom pink color */
@@ -20,6 +21,8 @@ body {
 
 .page-content {
     display: none; /* Hidden by default */
+    padding-left: 1rem; /* Added padding to prevent content from touching edges on small screens */
+    padding-right: 1rem; /* Added padding to prevent content from touching edges on small screens */
 }
 
 .page-content.active {
@@ -29,8 +32,7 @@ body {
 /* Carousel specific styles */
 .carousel-container {
     position: relative;
-    width: 100%;
-    max-width: 600px; /* Adjust as needed */
+    width: 100%; /* Changed from fixed max-width */
     margin: 0 auto;
     overflow: hidden;
     border-radius: 0.5rem;
