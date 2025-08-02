@@ -42,9 +42,9 @@
     </header>
 
     <!-- Main Content Area -->
-    <main class="flex-grow container mx-auto max-w-screen-xl">
+    <main class="flex-grow container mx-auto"> <!-- Removed max-w-screen-xl -->
         <!-- Accueil Page -->
-        <section id="accueil-page" class="page-content active bg-white text-black rounded-lg shadow-xl p-8 my-6">
+        <section id="accueil-page" class="page-content active bg-white text-black rounded-lg shadow-xl p-8 my-6 mx-4 md:mx-auto">
             <h1 class="text-5xl font-extrabold text-center text-pink-custom mb-6">B CENTER</h1>
             <h2 class="text-4xl font-bold text-center text-black mb-10">HÔTEL, RESTAURANT & ÉVÉNEMENTS</h2>
             <p class="text-lg text-center leading-relaxed mb-8">
@@ -57,7 +57,7 @@
         </section>
 
         <!-- Hôtel Page -->
-        <section id="hotel-page" class="page-content bg-white text-black rounded-lg shadow-xl p-8 my-6">
+        <section id="hotel-page" class="page-content bg-white text-black rounded-lg shadow-xl p-8 my-6 mx-4 md:mx-auto">
             <h1 class="text-4xl font-bold text-center text-pink-custom mb-6">Hôtel B Center</h1>
             <p class="text-lg text-center leading-relaxed mb-8">
                 Profitez d'un séjour confortable dans nos chambres modernes et bien équipées, situées au cœur de Sainte-Suzanne, Haïti.
@@ -68,7 +68,7 @@
             </p>
             <div class="flex justify-center">
                 <!-- Chambre Standard -->
-                <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md p-4 max-w-lg w-full">
+                <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md p-4 w-full md:max-w-lg"> <!-- Added w-full -->
                     <h3 class="text-xl font-semibold text-pink-custom mb-2 text-center">Chambre Standard</h3>
                     <p class="text-gray-700 text-center mb-4">Salle de bain privée, Wi-Fi gratuit, TV avec Cable.</p>
 
@@ -82,15 +82,15 @@
         </section>
 
         <!-- Restaurant & Bar Page -->
-        <section id="restaurant-bar-page" class="page-content bg-white text-black rounded-lg shadow-xl p-8 my-6">
+        <section id="restaurant-bar-page" class="page-content bg-white text-black rounded-lg shadow-xl p-8 my-6 mx-4 md:mx-auto">
             <h1 class="text-4xl font-bold text-center text-pink-custom mb-6">Restaurant & Bar</h1>
             <p class="text-lg text-center leading-relaxed mb-8">
                 Découvrez notre ambiance vibrante et nos boissons rafraîchissantes au bar du B Center.
             </p>
             <div class="flex justify-center">
-                <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md p-4 max-w-lg w-full">
+                <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md p-4 w-full md:max-w-lg"> <!-- Added w-full -->
                     <h3 class="text-xl font-semibold text-pink-custom mb-2 text-center">Notre Bar</h3>
-                    <p class="text-gray-700 text-center mb-4">Un espace idéal pour se détendre et profiter.</p>
+                    <p class="text-gray-700 text-center mb-4">Un espace ideal pour se detendre et profiter.</p>
 
                     <div class="carousel-container">
                         <img id="bar-image" src="https://i.imgur.com/0H4HRdM.jpeg" alt="Bar Image" class="carousel-image">
@@ -102,7 +102,7 @@
         </section>
 
         <!-- Événements Page -->
-        <section id="evenements-page" class="page-content bg-white text-black rounded-lg shadow-xl p-8 my-6">
+        <section id="evenements-page" class="page-content bg-white text-black rounded-lg shadow-xl p-8 my-6 mx-4 md:mx-auto">
             <h1 class="text-4xl font-bold text-center text-pink-custom mb-6">Événements au B Center</h1>
             <p class="text-lg text-center leading-relaxed mb-8">
                 Découvrez nos événements à venir et nos divertissements pour tous les goûts.
@@ -110,7 +110,7 @@
 
             <!-- Event 1: Spectacle de Bouyon Mizikal en Direct -->
             <div class="bg-gray-100 rounded-lg shadow-md p-6 mb-6 flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6">
-                <div class="md:w-1/2">
+                <div class="md:w-1/2 w-full"> <!-- Added w-full -->
                     <div class="flex items-center mb-4">
                         <svg class="w-8 h-8 text-pink-custom mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
                         <h2 class="text-2xl font-semibold text-pink-custom">Bouyon Mizikal</h2>
